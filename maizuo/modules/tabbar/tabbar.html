@@ -1,0 +1,57 @@
+<style type="text/css">
+	
+
+
+	.mz_footer {
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				height: 49px;
+				display: block;
+				background-color: white;
+				width: 100%;
+			}
+			.mz_footer ul{
+				list-style: none;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.mz_footer ul li{
+				width: 94px;
+				height: 49px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.mz_footer ul li img{
+				width: 21px;
+				margin: 0 auto;
+			}
+			.mz_footer ul li p{
+				font-size: 12px;
+				padding-top: 2px;
+			}
+			.mz_footer li  a{
+				color: #797d82;
+				text-decoration: none;
+
+			}
+			.mz_footer li a.active{
+			color: #ff5f16;
+			}
+</style>
+
+
+
+<!-- 这里就当做模板吧 -->
+<footer class="mz_footer ">
+	<ul>
+		{{each list}}
+			<li><a href="javascript:;">
+			<img src="{{$value.imgurl[0]}}">
+			<p>{{$value.title}}</p>
+		</a></li>
+		{{/each}}
+	</ul>
+</footer>

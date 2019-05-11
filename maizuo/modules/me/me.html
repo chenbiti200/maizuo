@@ -1,0 +1,90 @@
+
+<style type="text/css">
+	html{
+		background-color: #eee;
+	}
+	#me{
+
+	} 
+
+	#me .login{
+		background-color: #fff;
+		height: 155px;
+		background: url("./img/bg.png");
+		font-size: 18px;
+	}
+	#me .login .avatar{
+
+		display: flex;
+		align-items: center;
+		height: 155px;
+		color: #fff;
+	}
+	#me .login .avatar img{
+		border: 2px solid #fff;
+		border-radius: 50%;
+		width: 68px;	
+		height: 68px;
+		margin: 0 20px;
+	}
+	#me .order{
+		background-color: #fff;
+		height: 80px;
+		display: flex;
+		justify-content: center;
+	}
+	#me .order a{
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+	#me .order a img{
+		height: 23px;
+		width: auto;
+		display: inline-block;
+		margin: 15px 0 10px 0;
+	}
+	#me .order a p{
+		font-size: 12px;
+		color: #ccc;
+	}
+	#me .content{
+		margin-top:10px; 
+		background-color: #fff;
+	}
+	.content p{
+		height: 50px;
+		box-sizing: border-box;
+		border-bottom: 1px solid #ccc;
+		line-height: 50px;
+	}
+</style>
+
+<div id="me">
+	<div class="login">
+		<div class="avatar">
+			<img src="./img/avatar.png">
+			<span>立即登录</span>
+		</div>
+	</div>
+
+	<div class="order">
+		{{each data}}
+		<a href="">
+			<img src="{{$value[0]}}">
+			<p>{{$value[1]}}</p>
+		</a>
+		
+		{{/each}}
+	</div>
+
+	<div class="content">
+		<p><img src="">卖座卡</p>
+		<p><img src="">组合红包 <span>&yen;<i>0</i></span></p>
+		<p><img src="">余额</p>
+		<p><img src="">设置</p>
+	</div>
+</div>

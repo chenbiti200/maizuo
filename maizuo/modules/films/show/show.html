@@ -1,0 +1,16 @@
+<style type="text/css">
+	.mz_movie{
+			height: 49px;
+			box-sizing: border-box;
+			border-bottom:1px solid #F7F7F7;
+		}
+</style>
+
+
+<section class="mz_movie">
+	{{each data}}
+	<a href="javascript:;"><span>{{$value}}</span></a>
+	{{/each}}
+</section>
+
+<div id="movie_detail"></div>
