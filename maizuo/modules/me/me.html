@@ -60,6 +60,18 @@
 		box-sizing: border-box;
 		border-bottom: 1px solid #ccc;
 		line-height: 50px;
+		display: flex;
+		align-items: center;
+	}
+	.content p span{
+		flex: 1;
+		text-align: right;
+		padding: 0 20px;
+	}
+	.content img{
+		padding: 0 15px;
+		height: 20px;
+		width: 20px;
 	}
 </style>
 
@@ -72,7 +84,7 @@
 	</div>
 
 	<div class="order">
-		{{each data}}
+		{{each order}}
 		<a href="">
 			<img src="{{$value[0]}}">
 			<p>{{$value[1]}}</p>
@@ -82,9 +94,9 @@
 	</div>
 
 	<div class="content">
-		<p><img src="">卖座卡</p>
-		<p><img src="">组合红包 <span>&yen;<i>0</i></span></p>
-		<p><img src="">余额</p>
-		<p><img src="">设置</p>
+		<p><img src="./img/con1.png">卖座卡</p>
+		<p><img src="./img/con2.png">组合红包 <span>&yen;<i>0</i></span></p>
+		<p><img src="./img/con3.png">余额</p>
+		<p><img src="./img/con4.png">设置</p>
 	</div>
 </div>
